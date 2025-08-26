@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Videos</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: url("https://www.transparenttextures.com/patterns/cubes.png") repeat;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+      color: #222;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Header with icons */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 15px;  /* space between title and icons */
+      flex-wrap: wrap;
+    }
+
+    .header h1 {
+      font-size: 2.2em;
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    .header-icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .header-icons img {
+      width: 36px;
+      height: 36px;
+    }
+
+    .underline {
+      width: 60px;
+      height: 4px;
+      background: #1a73e8;
+      margin: 10px 0 30px 0;
+      border-radius: 2px;
+    }
+
+    h2.section-title {
+      font-size: 1.4em;
+      margin: 30px 0 20px 0;
+      color: #333;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .video-card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .video-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .video-content {
+      padding: 15px;
+    }
+
+    .video-content h3 {
+      margin: 5px 0;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .video-content p {
+      font-size: 0.95em;
+      color: #555;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Title row with icons -->
+  <div class="header">
+    <h1>Zihao's Demos</h1>
+    <div class="header-icons">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712107.png" alt="robot">
+      <img src="https://cdn-icons-png.flaticon.com/512/3225/3225103.png" alt="robot arm">
+      <img src="https://cdn-icons-png.flaticon.com/512/7430/7430300.png" alt="autonomous car">
+    </div>
+  </div>
+
+  <div class="underline"></div>
+
+  <!-- Section 1 -->
+  <h2 class="section-title">RoboTwin Demos</h2>
+  <div class="video-grid">
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/t4ULl9PWtZs" allowfullscreen></iframe>
+      </div>
+      <div class="video-content">
+        <h3>Put Bottles Dustbin Task</h3>
+        <p>Pick up the bottles on the table and put them into the dustbin.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/VNmCWUztG3w" allowfullscreen></iframe>
+      </div>
+      <div class="video-content">
+        <h3>Stack Two Bowls Task</h3>
+        <p>Pick up one bowl and put it onto the another.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/lR-nyRRwTHY" allowfullscreen></iframe>
+      </div>
+      <div class="video-content">
+        <h3>Object Transfer Task</h3>
+        <p>Pick up the object on the table and put it into the basket.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <h2 class="section-title">ALOHA Demos</h2>
+  <div class="video-grid">
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/1dZT8CCV3ik" allowfullscreen></iframe>
+      </div>
+      <div class="video-content">
+        <h3>Unscrewing Bottle Cap</h3>
+        <p>Hold the bottle on the table and unscrew the cap to open the bottle.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/qDdI6kYxhR0" allowfullscreen></iframe>
+      </div>
+      <div class="video-content">
+        <h3>Put Cube Basket</h3>
+        <p>Push the basket to the middle of the table, pick up the cube and put it into the basket.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/fgaB2wXBSfw" allowfullscreen></iframe>
+      </div>
+      <div class="video-content">
+        <h3>Stack Two Cubes</h3>
+        <p>Pick up one cube and put it onto another.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <h2 class="section-title">Autonomous Path Planner Demos</h2>
+  <div class="video-grid">
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/ueK3JrQ7FAM" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/PnWqNdFxdQo" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/wz4Xof0td_w" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
+
