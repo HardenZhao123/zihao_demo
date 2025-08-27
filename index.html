@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demo Videos</title>
+  <title>Zihao's Demo Videos</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -19,11 +19,10 @@
       margin: 0 auto;
     }
 
-    /* Header with icons */
     .header {
       display: flex;
       align-items: center;
-      gap: 15px;  /* space between title and icons */
+      gap: 15px;
       flex-wrap: wrap;
     }
 
@@ -59,7 +58,7 @@
 
     .video-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 24px;
     }
 
@@ -80,17 +79,20 @@
 
     .video-wrapper {
       position: relative;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      padding-bottom: 100%; /* square */
       height: 0;
       overflow: hidden;
     }
 
-    .video-wrapper iframe {
+    .video-wrapper video {
       position: absolute;
-      top: 0; left: 0;
+      top: 50%;
+      left: 50%;
       width: 100%;
       height: 100%;
-      border: none;
+      object-fit: contain; /* ensures whole video fits */
+      transform: translate(-50%, -50%);
+      border-radius: 14px 14px 0 0;
     }
 
     .video-content {
@@ -114,7 +116,7 @@
 <body>
 <div class="container">
 
-  <!-- Title row with icons -->
+  <!-- Header -->
   <div class="header">
     <h1>Zihao's Demos</h1>
     <div class="header-icons">
@@ -126,133 +128,152 @@
 
   <div class="underline"></div>
 
-  <!-- Section 1 -->
+  <!-- Section 1: RoboTwin Demos -->
+  <h2 class="section-title">Cobot Magic Demos</h2>
+  <div class="video-grid">
+    <div class="video-card">
+      <div class="video-wrapper">
+        <video controls preload="metadata">
+          <source src="videos/IMG_3181.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-content">
+        <h3>Unscrew Bottle Cap</h3>
+        <p>Hold the bottle on the table and unscrew the cap.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrapper">
+        <video controls preload="metadata">
+          <source src="videos/IMG_3165.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-content">
+        <h3>Stack Two Cubes</h3>
+        <p>Pick up one cube and put it onto another.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrapper">
+        <video controls preload="metadata">
+          <source src="videos/IMG_3172.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-content">
+        <h3>Put Cube Basket</h3>
+        <p>Pick up the cube on the table and put it into the basket.</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-wrapper">
+        <video controls preload="metadata">
+          <source src="videos/IMG_3218.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-content">
+        <h3>Move Pen</h3>
+        <p>Pick up the pen and move it into a different container.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Section 2: ALOHA Demos -->
   <h2 class="section-title">RoboTwin Demos</h2>
   <div class="video-grid">
 
     <div class="video-card">
       <div class="video-wrapper">
         <video controls preload="metadata">
-          <source src="videos/IMG_3181.mov" type="video/quicktime">
-          <source src="videos/IMG_3181.mp4" type="video/mp4">
-          Your browser does not support the video tag.
+          <source src="videos/episode0.mp4" type="video/mp4">
         </video>
       </div>
       <div class="video-content">
-        <h3>Unscrewing Bottle Cap</h3>
-        <p>Hold the bottle on the table and unscrew the cap to open the bottle.</p>
+        <h3>Put Object Cabinet</h3>
+        <p>Pick up the object on the table and put it into the cabinet.</p>
       </div>
     </div>
 
     <div class="video-card">
       <div class="video-wrapper">
         <video controls preload="metadata">
-          <source src="videos/IMG_3172.mov" type="video/quicktime">
-          <source src="videos/IMG_3172.mp4" type="video/mp4">
-          Your browser does not support the video tag.
+          <source src="videos/episode1.mp4" type="video/mp4">
         </video>
       </div>
       <div class="video-content">
-        <h3>Put Cube Basket</h3>
-        <p>Push the basket to the middle of the table, pick up the cube and put it into the basket.</p>
+        <h3>Put Bottles Dustbin</h3>
+        <p>Pick up the bottles on the table and put them into the dustbin.</p>
       </div>
     </div>
 
     <div class="video-card">
       <div class="video-wrapper">
         <video controls preload="metadata">
-          <source src="videos/IMG_3165.mov" type="video/quicktime">
-          <source src="videos/IMG_3165.mp4" type="video/mp4">
-          Your browser does not support the video tag.
+          <source src="videos/episode2.mp4" type="video/mp4">
         </video>
       </div>
       <div class="video-content">
-        <h3>Stack Two Cubes</h3>
-        <p>Pick up one cube and put it onto another.</p>
+        <h3>Put Object Basket</h3>
+        <p>Pick up the object on the table and put it into the basket.</p>
       </div>
     </div>
 
     <div class="video-card">
       <div class="video-wrapper">
         <video controls preload="metadata">
-          <source src="videos/IMG_3218.mov" type="video/quicktime">
-          <source src="videos/IMG_3218.mp4" type="video/mp4">
-          Your browser does not support the video tag.
+          <source src="videos/episode3.mp4" type="video/mp4">
         </video>
       </div>
       <div class="video-content">
-        <h3>Move Pen</h3>
-        <p>Pick up the pen and move it into a different container.</p>
+        <h3>Stack Two Bowls</h3>
+        <p>Pick up the first bowl and place it on top of the second bowl.</p>
       </div>
     </div>
 
   </div>
 
-  <!-- Section 2 -->
-  <h2 class="section-title">ALOHA Demos</h2>
-  <div class="video-grid">
-    <div class="video-card">
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/_b-sRk-RKjY" allowfullscreen></iframe>
-      </div>
-      <div class="video-content">
-        <h3>Unscrewing Bottle Cap</h3>
-        <p>Hold the bottle on the table and unscrew the cap to open the bottle.</p>
-      </div>
-    </div>
-
-    <div class="video-card">
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/09nLF3NOUio" allowfullscreen></iframe>
-      </div>
-      <div class="video-content">
-        <h3>Put Cube Basket</h3>
-        <p>Push the basket to the middle of the table, pick up the cube and put it into the basket.</p>
-      </div>
-    </div>
-
-    <div class="video-card">
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/O_r3qpe5Vdw" allowfullscreen></iframe>
-      </div>
-      <div class="video-content">
-        <h3>Stack Two Cubes</h3>
-        <p>Pick up one cube and put it onto another.</p>
-      </div>
-    </div>
-    
-    <div class="video-card">
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/ycmc_wNTCo4" allowfullscreen></iframe>
-      </div>
-      <div class="video-content">
-        <h3>Move Pen</h3>
-        <p>Pick up the pen and move it into a different container.</p>
-      </div>
-    </div>
-    
-  </div>
-
-  <!-- Section 3 -->
+  <!-- Section 3: Autonomous Path Planner Demos -->
   <h2 class="section-title">Autonomous Path Planner Demos</h2>
   <div class="video-grid">
     <div class="video-card">
       <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/ueK3JrQ7FAM" allowfullscreen></iframe>
+        <video controls preload="metadata">
+          <source src="videos/path_plan_0.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-content">
+        <h3>Path Planning Demo 1</h3>
+        <p>Autonomous navigation demo.</p>
       </div>
     </div>
 
     <div class="video-card">
       <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/PnWqNdFxdQo" allowfullscreen></iframe>
+        <video controls preload="metadata">
+          <source src="videos/path_plan_1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-content">
+        <h3>Path Planning Demo 2</h3>
+        <p>Autonomous navigation demo.</p>
       </div>
     </div>
 
     <div class="video-card">
       <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/wz4Xof0td_w" allowfullscreen></iframe>
+        <video controls preload="metadata">
+          <source src="videos/path_plan_2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-content">
+        <h3>Path Planning Demo 2</h3>
+        <p>Autonomous navigation demo.</p>
       </div>
     </div>
+
   </div>
 
 </div>
