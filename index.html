@@ -19,11 +19,10 @@
       margin: 0 auto;
     }
 
-    /* Header with icons */
     .header {
       display: flex;
       align-items: center;
-      gap: 15px;  /* space between title and icons */
+      gap: 15px;
       flex-wrap: wrap;
     }
 
@@ -85,7 +84,7 @@
       overflow: hidden;
     }
 
-    .video-wrapper iframe {
+    .video-wrapper video {
       position: absolute;
       top: 0; left: 0;
       width: 100%;
@@ -132,7 +131,10 @@
     
     <div class="video-card">
       <div class="video-wrapper">
-        <iframe src="/videos/IMG_3181.mp4" allowfullscreen></iframe>
+        <video controls>
+          <source src="/videos/IMG_3181.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
       <div class="video-content">
         <h3>Unscrewing Bottle Cap</h3>
@@ -142,7 +144,9 @@
 
     <div class="video-card">
       <div class="video-wrapper">
-        <iframe src="/videos/IMG_3172.mp4" allowfullscreen></iframe>
+        <video controls>
+          <source src="/videos/IMG_3172.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="video-content">
         <h3>Put Cube Basket</h3>
@@ -152,17 +156,21 @@
 
     <div class="video-card">
       <div class="video-wrapper">
-        <iframe src="/videos/IMG_3165.mp4" allowfullscreen></iframe>
+        <video controls>
+          <source src="/videos/IMG_3165.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="video-content">
         <h3>Stack Two Cubes</h3>
         <p>Pick up one cube and put it onto another.</p>
       </div>
     </div>
-    
+
     <div class="video-card">
       <div class="video-wrapper">
-        <iframe src="/videos/IMG_3218.mp4" allowfullscreen></iframe>
+        <video controls>
+          <source src="/videos/IMG_3218.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="video-content">
         <h3>Move Pen</h3>
@@ -172,7 +180,9 @@
 
     <div class="video-card">
       <div class="video-wrapper">
-        <iframe src="/videos/IMG_3222.mp4" allowfullscreen></iframe>
+        <video controls>
+          <source src="/videos/IMG_3222.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="video-content">
         <h3>Pour Rice Pot</h3>
@@ -187,7 +197,9 @@
   <div class="video-grid">
     <div class="video-card">
       <div class="video-wrapper">
-        <iframe src="/videos/episode1.mp4" allowfullscreen></iframe>
+        <video controls>
+          <source src="/videos/episode1.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="video-content">
         <h3>Put Bottles Dustbin Task</h3>
@@ -197,7 +209,9 @@
 
     <div class="video-card">
       <div class="video-wrapper">
-        <iframe src="/videos/episode3.mp4" allowfullscreen></iframe>
+        <video controls>
+          <source src="/videos/episode3.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="video-content">
         <h3>Stack Two Bowls Task</h3>
@@ -207,7 +221,9 @@
 
     <div class="video-card">
       <div class="video-wrapper">
-        <iframe src="/videos/episode2.mp4" allowfullscreen></iframe>
+        <video controls>
+          <source src="/videos/episode2.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="video-content">
         <h3>Object Transfer Task</h3>
@@ -217,14 +233,15 @@
 
     <div class="video-card">
       <div class="video-wrapper">
-        <iframe src="/videos/episode0.mp4" allowfullscreen></iframe>
+        <video controls>
+          <source src="/videos/episode0.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="video-content">
         <h3>Object Transfer Task</h3>
         <p>Pick up the object on the table, open the cabinet, and put the object into the cabinet.</p>
       </div>
     </div>
-    
   </div>
 
   <!-- Path Planner -->
@@ -232,22 +249,27 @@
   <div class="video-grid">
     <div class="video-card">
       <div class="video-wrapper">
-        <iframe src="/videos/path_plan_0.mp4" allowfullscreen></iframe>
+        <video controls>
+          <source src="/videos/path_plan_0.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
     <div class="video-card">
       <div class="video-wrapper">
-        <iframe src="/videos/path_plan_1.mp4" allowfullscreen></iframe>
+        <video controls>
+          <source src="/videos/path_plan_1.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
     <div class="video-card">
       <div class="video-wrapper">
-        <iframe src="/videos/path_plan_2.mp4" allowfullscreen></iframe>
+        <video controls>
+          <source src="/videos/path_plan_2.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
-
   </div>
 
 </div>
